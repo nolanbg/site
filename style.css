@@ -1,4 +1,14 @@
 /* Basic Portfolio Styling */
+/* For all major modern browsers */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* For Chrome, Safari, Opera, and other WebKit-based browsers */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 * {
       margin: 0;
       padding: 0;
