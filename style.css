@@ -1,0 +1,111 @@
+/* Basic Portfolio Styling */
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+/* Styles for the section containing the parallax background */
+/* parallax "viewport" */
+.parallax {
+  height: 100vh;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  perspective: 1px;
+}
+
+.image-swap .animated {
+  display: none; /* Hide the GIF by default */
+}
+
+.image-swap:hover .static {
+  display: none; /* Hide the static image on hover */
+}
+
+.image-swap:hover .animated {
+  display: inline; /* Show the GIF on hover */
+}
+
+@font-face {
+    font-family: 'Akkurat-Mono';
+    src: url('Akkurat-Mono.woff2') format('woff2'),
+        url('Akkurat-Mono.woff') format('woff'),
+        url('Akkurat-Mono.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+video#camera-stream {
+  background-color: black;
+  display: none;
+}
+
+canvas#hidden-canvas {
+  display: none;
+}
+
+canvas#output-canvas {
+  background-color: white;
+}
+    body {
+      background: #fff;
+      color: #000;
+      font-family: 'Akkurat-Mono', sans-serif;
+    }
+
+    header {
+      padding: 20px 40px;
+      border-bottom: 1px solid #e0e0e0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #000;
+      margin-left: 30px;
+      font-size: 14px;
+    }
+
+    .hero {
+      height: 600px;
+      background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #f9f9f9;
+      padding: 30px;
+      border: 1px solid #e0e0e0;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      padding: 40px;
+      border-top: 1px solid #e0e0e0;
+      text-align: center;
+      color: #666;
+    }
