@@ -32,9 +32,9 @@
 
 @font-face {
     font-family: 'Akkurat-Mono';
-    src: url('Akkurat-Mono.woff2') format('woff2'),
-        url('Akkurat-Mono.woff') format('woff'),
-        url('Akkurat-Mono.ttf') format('truetype');
+    src: url('assets\fonts\Akkurat-Mono.woff2') format('woff2'),
+        url('assets\fonts\Akkurat-Mono.woff') format('woff'),
+        url('assets\fonts\Akkurat-Mono.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -57,6 +57,11 @@ canvas#output-canvas {
       font-family: 'Akkurat-Mono', sans-serif;
     }
 
+li {list-style: none; float: left; background: #ffffff;}
+li + li {border-left: 1px solid;}
+a { background: #ffffff; display: block; padding: .5em 1em;}
+
+
     header {
       padding: 20px 40px;
       border-bottom: 1px solid #e0e0e0;
@@ -74,7 +79,7 @@ canvas#output-canvas {
 
     .hero {
       height: 600px;
-      background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+      background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -111,4 +116,13 @@ canvas#output-canvas {
       border-top: 1px solid #e0e0e0;
       text-align: center;
       color: #666;
+    }
+    .active-song {
+        font-weight: bold;
+        color: blue;
+        cursor: pointer;
+    }
+    li {
+        cursor: pointer;
+        padding: 5px;
     }
