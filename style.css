@@ -29,33 +29,18 @@
   display: inline; /* Show the GIF on hover */
   max-width: 80%;
 }
-
-@font-face {
-    font-family: 'Akkurat-Mono';
-    src: local('assets\fonts\Akkurat-Mono.woff2') format('woff2'),
-        local('assets\fonts\Akkurat-Mono.woff') format('woff'),
-          local('assets\fonts\Akkurat-Mono.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-video#camera-stream {
-  background-color: black;
-  display: none;
-}
-
-canvas#hidden-canvas {
-  display: none;
-}
-
-canvas#output-canvas {
-  background-color: white;
-}
-    body {
+body {
       background: #fff;
         color: #000;
         font-family: 'Akkurat-Mono';
     }
+@font-face {
+    font-family: 'Akkurat-Mono';
+    src: url('assets/fonts/Akkurat-Mono.woff2') format('woff2'),
+        url('assets/fonts/Akkurat-Mono.woff') format('woff'),
+          url('assets/fonts/Akkurat-Mono.ttf') format('truetype');
+}
+
 
 li {list-style: none; float: left; background: #ffffff;}
 li + li {border-left: 1px solid;}
@@ -64,7 +49,7 @@ a { background: #ffffff; display: block; padding: .5em 1em;}
 
     header {
       padding: 20px 40px;
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px solid #ffffff;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -101,9 +86,9 @@ a { background: #ffffff; display: block; padding: .5em 1em;}
     }
 
     .card {
-      background: #f9f9f9;
+      background: #ffffff;
       padding: 10px;
-      border: 1px solid #e0e0e0;
+      border: 1px solid #ffffff;
     }
 
     .card h2 {
