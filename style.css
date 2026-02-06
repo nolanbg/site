@@ -32,9 +32,9 @@
 
 @font-face {
     font-family: 'Akkurat-Mono';
-    src: url('assets\fonts\Akkurat-Mono.woff2') format('woff2'),
-        url('assets\fonts\Akkurat-Mono.woff') format('woff'),
-        url('assets\fonts\Akkurat-Mono.ttf') format('truetype');
+    src: local('assets\fonts\Akkurat-Mono.woff2') format('woff2'),
+        local('assets\fonts\Akkurat-Mono.woff') format('woff'),
+          local('assets\fonts\Akkurat-Mono.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -53,8 +53,8 @@ canvas#output-canvas {
 }
     body {
       background: #fff;
-      color: #000;
-      font-family: 'Akkurat-Mono', sans-serif;
+        color: #000;
+        font-family: 'Akkurat-Mono';
     }
 
 li {list-style: none; float: left; background: #ffffff;}
