@@ -16,7 +16,13 @@ const tracks = [
         artist: "Delblot, Ayamsine, Hazard Boy",
         file: "assets/audio/Ayamsine & Delblot - Amaranth (Hazard Boy Remix) - Hazard Boy - SoundLoadMate.com.mp3", // Replace with the path to your audio file
         image: "assets/images/Ayamsine & Delblot - Amaranth (Hazard Boy Remix) - Hazard Boy - SoundLoadMate.com.jpeg" // Path to your second image
-    }
+    },
+    {
+        title: "Wait For Me",
+        artist: "Delblot, Hazard Boy",
+        file: "assets/audio/6wait 4 me.wav", // Replace with the path to your audio file
+        image: "assets/images/knifetreecover.png" // Path to your second image
+    },
     // Add more tracks as needed
 ];
 
